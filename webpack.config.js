@@ -2,25 +2,21 @@ const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
-	entry: './components/index.jsx',
+	entry: './js/scripts.js',
 	output: {
-		path: `${__dirname}/public`,
+		path: `public/`,
 		filename: 'scripts.js'
 	},
 	watch: true,
 	devtool: 'source-map',
 	module: {
-		loaders: [{
-			test: /.jsx?$/,
+		loaders: [{			
+			test: /.js?$/,
 			loader: 'babel-loader',
 			exclude: /node_modules/,
 			query: {
 				presets: [
-					'es2015',
-					'react'
-				],
-				plugins: [
-					'transform-class-properties'
+					'es2015'
 				]
 			}
 		}]

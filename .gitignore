@@ -4,3 +4,5 @@ scss/base/
 scss/bourbon/
 scss/neat/
 scss/_normalize.scss
+.sass-cache/
+*.map

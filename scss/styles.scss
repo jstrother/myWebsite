@@ -1,5 +1,10 @@
-@import 'bourbon/bourbon';
-@import 'base/base';
-@import 'neat/neat';
-@import 'myVariables';
-@import 'normalize';
+@import "bourbon/bourbon";
+@import "base/base";
+@import "neat/neat";
+@import "myVariables";
+@import "normalize";
+
+body {
+	background: white;
+	color: black;
+}
