@@ -1,2 +1,6 @@
 node_modules/
 *.log
+scss/base/
+scss/bourbon/
+scss/neat/
+scss/_normalize.scss
