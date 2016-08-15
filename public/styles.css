@@ -523,4 +523,45 @@ body {
   background: white;
   color: black; }
 
+nav {
+  background-color: #d3d3d3;
+  width: 100%;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  nav::after {
+    clear: both;
+    content: "";
+    display: table; }
+  nav p {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    nav p:last-child {
+      margin-right: 0; }
+  nav ul {
+    display: inline;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-left: 68.23843%; }
+    nav ul:last-child {
+      margin-right: 0; }
+    nav ul #first {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 47.58542%; }
+      nav ul #first:last-child {
+        margin-right: 0; }
+    nav ul #second {
+      float: left;
+      display: block;
+      margin-right: 4.82916%;
+      width: 47.58542%; }
+      nav ul #second:last-child {
+        margin-right: 0; }
+
 /*# sourceMappingURL=styles.css.map */

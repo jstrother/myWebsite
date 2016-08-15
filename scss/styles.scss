@@ -8,3 +8,22 @@ body {
 	background: white;
 	color: black;
 }
+nav {
+	background-color: $navColor;
+	width: 100%;
+	@include outer-container;
+	p {
+		@include span-columns(4);
+	}
+	ul {
+		display: inline;
+		@include span-columns(6);
+		@include shift(8);
+		#first {
+			@include span-columns(3 of 6);
+		}
+		#second {
+			@include span-columns(3 of 6);
+		}
+	}
+}
