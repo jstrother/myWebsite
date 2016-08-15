@@ -526,6 +526,7 @@ body {
 nav {
   background-color: #d3d3d3;
   width: 100%;
+  padding-top: 1em;
   max-width: 68em;
   margin-left: auto;
   margin-right: auto; }
@@ -534,35 +535,27 @@ nav {
     content: "";
     display: table; }
   nav p {
+    margin-left: 3em;
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%; }
+    width: 23.23176%; }
     nav p:last-child {
       margin-right: 0; }
   nav ul {
+    padding-left: 8em;
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-left: 51.17883%; }
+    width: 31.76157%;
+    margin-left: 34.11922%; }
     nav ul:last-child {
       margin-right: 0; }
     nav ul li {
       display: inline-block; }
     nav ul #first {
-      float: left;
-      display: block;
-      margin-right: 4.82916%;
-      width: 47.58542%; }
-      nav ul #first:last-child {
-        margin-right: 0; }
+      margin-right: 3em; }
     nav ul #second {
-      float: left;
-      display: block;
-      margin-right: 4.82916%;
-      width: 47.58542%; }
-      nav ul #second:last-child {
-        margin-right: 0; }
+      margin-left: 2em; }
 
 /*# sourceMappingURL=styles.css.map */

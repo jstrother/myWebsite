@@ -11,21 +11,24 @@ body {
 nav {
 	background-color: $navColor;
 	width: 100%;
+	padding-top: 1em;
 	@include outer-container;
 	p {
-		@include span-columns(4);
+		margin-left: 3em;
+		@include span-columns(3);
 	}
 	ul {
-		@include span-columns(6);
-		@include shift(6);
+		padding-left: 8em;
+		@include span-columns(4);
+		@include shift(4);
 		li {
 			display: inline-block;
 		}
 		#first {
-			@include span-columns(3 of 6);
+			margin-right: 3em;
 		}
 		#second {
-			@include span-columns(3 of 6);
+			margin-left: 2em;
 		}
 	}
 }
