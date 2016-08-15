@@ -541,14 +541,15 @@ nav {
     nav p:last-child {
       margin-right: 0; }
   nav ul {
-    display: inline;
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 48.82117%;
-    margin-left: 68.23843%; }
+    margin-left: 51.17883%; }
     nav ul:last-child {
       margin-right: 0; }
+    nav ul li {
+      display: inline-block; }
     nav ul #first {
       float: left;
       display: block;

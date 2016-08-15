@@ -16,9 +16,11 @@ nav {
 		@include span-columns(4);
 	}
 	ul {
-		display: inline;
 		@include span-columns(6);
-		@include shift(8);
+		@include shift(6);
+		li {
+			display: inline-block;
+		}
 		#first {
 			@include span-columns(3 of 6);
 		}
