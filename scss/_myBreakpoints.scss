@@ -1,4 +1,6 @@
 // responsive website variables based on screen size
+$ltDesktop: max-width em(860) 12 !default;
+
 $desktop: max-width em(990) 12 !default;
 $gtDesktop: min-width em(991) 12 !default;
 

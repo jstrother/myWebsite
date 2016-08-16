@@ -4,16 +4,21 @@
 @import "normalize";
 @import "myVariables";
 @import "myNavigation";
+@import "myFooter";
 
 body {
 	background: white;
 	color: black;
+	width: 100%;
 }
 
 #name-div {
 	padding-top: 2em;
 	position: relative;
 	left: 40%;
+	@include media($ltDesktop) {
+		display: none;
+	}
 }
 
 .side-image {
@@ -26,17 +31,17 @@ body {
   .images-wrapper {
     background: url("./img/close-up1.jpg"),
                 linear-gradient($side-image-background-top, $side-image-background-bottom),
-                no-repeat $side-image-background-top scroll;
+                no-repeat $side-image-background-top;
     background-color: $side-image-background-top;
     background-size: cover;
     border-bottom: $side-image-border;
     display: block;
-    min-height: 12em;
+    min-height: 20em;
     padding: 3em;
 
     @include media($large-screen) {
       @include span-columns(4);
-      background-position: bottom;
+      background-position: top;
       background-size: cover;
       border-right: $side-image-border;
     }
