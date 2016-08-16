@@ -1,3 +1,29 @@
 @import "myBreakpoints";
 
-$navColor: #d3d3d3;
+// variables dealing with nav bar
+$base-border-radius: 3px !default;
+$dark-gray: #333 !default;
+$large-screen: 53.75em !default;
+$base-font-color: $dark-gray !default;
+$centered-navigation-padding: 1em;
+$centered-navigation-logo-height: 2em;
+$centered-navigation-background: #E7F1EC;
+$centered-navigation-color: transparentize($base-font-color, 0.3);
+$centered-navigation-color-hover: $base-font-color;
+$centered-navigation-height: 60px;
+$centered-navigation-item-padding: 1em;
+$centered-navigation-submenu-padding: 1em;
+$centered-navigation-submenu-width: 12em;
+$centered-navigation-item-nudge: 2.2em;
+$horizontal-bar-mode: $large-screen;
+
+// variables dealing with side image
+$base-line-height: 1.5em !default;
+$action-color: #477DCA !default;
+$dark-gray: #333 !default;
+$large-screen: 53.75em !default;
+$base-font-color: $dark-gray !default;
+$side-image-background-top: #B5EBEB;
+$side-image-background-bottom: #5DAC5D;
+$side-image-content-background: #F9F9F9;
+$side-image-border: 1px solid darken(transparentize($side-image-background-bottom, 0.8), 30%);

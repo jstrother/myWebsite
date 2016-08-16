@@ -6,25 +6,37 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<header>
-		<nav>
-			<p>Jim Strother | Web Development</p>
-			<ul>
-				<li id="fist">About Jim</li>
-				<li id="second">Portfolio</li>
-			</ul>
-		</nav>
+	<header class="centered-navigation" role="banner">
+	  <div class="centered-navigation-wrapper">
+	    <a href="javascript:void(0)" class="mobile-logo">
+	      <img src="img/head-shot1.jpg" alt="Jim image">
+	    </a>
+	    <div id="name-div" class="nav-link">Jim Strother | Web Developer</div>
+	    <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
+	    <nav role="navigation">
+	      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+	        <li class="nav-link"><a href="javascript:void(0)">About Me</a></li>
+	        <li class="nav-link"><a href="javascript:void(0)">Portfolio</a></li>
+	      </ul>
+	    </nav>
+	  </div>
 	</header>
 	<main>
-		<div id="about">
-			<p>About Me</p>
-			<p>-brief about me (likes, hobbies, etc)</p>
-			<p>-skills</p>
-		</div>
-		<div id="portfolio">
-			<p>List of projects</p>
-			<p>-links to GitHub</p>
-			<p>-open modal to see it in action</p>
+		<div class="side-image">
+		  <div class="images-wrapper"></div>
+		    <div class="side-image-content">
+		    <!-- modal code here for #about and #portfolio -->
+				<div id="about">
+					<p>About Me</p>
+					<p>-brief about me (likes, hobbies, etc)</p>
+					<p>-skills</p>
+				</div>
+				<div id="portfolio">
+					<p>Portfolio</p>
+					<p>-links to GitHub</p>
+					<p>-open modal to see it in action</p>
+				</div>
+		  </div>
 		</div>
 	</main>
 	<footer>

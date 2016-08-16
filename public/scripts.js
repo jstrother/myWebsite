@@ -54,6 +54,37 @@
 	
 	(0, _jquery2.default)(document).ready(function () {
 		console.log('ready');
+		(0, _jquery2.default)(window).on("load resize", function (e) {
+			var more = document.getElementById("js-centered-more");
+	
+			if ((0, _jquery2.default)(more).length > 0) {
+				var windowWidth = (0, _jquery2.default)(window).width();
+				var moreLeftSideToPageLeftSide = (0, _jquery2.default)(more).offset().left;
+				var moreLeftSideToPageRightSide = windowWidth - moreLeftSideToPageLeftSide;
+	
+				if (moreLeftSideToPageRightSide < 330) {
+					(0, _jquery2.default)("#js-centered-more .submenu .submenu").removeClass("fly-out-right");
+					(0, _jquery2.default)("#js-centered-more .submenu .submenu").addClass("fly-out-left");
+				}
+	
+				if (moreLeftSideToPageRightSide > 330) {
+					(0, _jquery2.default)("#js-centered-more .submenu .submenu").removeClass("fly-out-left");
+					(0, _jquery2.default)("#js-centered-more .submenu .submenu").addClass("fly-out-right");
+				}
+			}
+	
+			var menuToggle = (0, _jquery2.default)("#js-centered-navigation-mobile-menu").unbind();
+			(0, _jquery2.default)("#js-centered-navigation-menu").removeClass("show");
+	
+			menuToggle.on("click", function (e) {
+				e.preventDefault();
+				(0, _jquery2.default)("#js-centered-navigation-menu").slideToggle(function () {
+					if ((0, _jquery2.default)("#js-centered-navigation-menu").is(":hidden")) {
+						(0, _jquery2.default)("#js-centered-navigation-menu").removeAttr("style");
+					}
+				});
+			});
+		});
 	});
 
 /***/ },
