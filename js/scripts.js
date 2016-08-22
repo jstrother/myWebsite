@@ -6,10 +6,12 @@ $(document).ready(function() {
 
 	// velocityJS code for some animations
 	$('#about-link').on('click', function() {
+		$('#headers').hide();
 		$('#portfolio').hide();
 		$('#about').velocity('fadeIn', {duration: 1500})
 	});
 	$('#portfolio-link').on('click', function() {
+		$('#headers').hide();
 		$('#about').hide();
 		$('#portfolio').velocity('fadeIn', {duration: 1500})
 	});

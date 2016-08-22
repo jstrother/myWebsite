@@ -1,0 +1,7 @@
+$start: ($base-font-size * 4); 
+@each $h in h1, h2, h3, h4, h5, h6{
+  #{$h} { 
+	  font-size: $start;
+  }
+  $start: $start - 0.5;
+}

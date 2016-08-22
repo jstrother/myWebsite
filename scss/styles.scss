@@ -6,6 +6,10 @@
 @import "myNavigation";
 @import "myFooter";
 
+* {
+	// border: 1px solid red;
+}
+
 body {
 	background: white;
 	color: black;
@@ -16,14 +20,25 @@ body {
 	padding-top: 2em;
 	position: relative;
 	left: 40%;
+	width: 15em;
 	@include media($ltDesktop) {
 		display: none;
 	}
 }
 
-#grey-div {
-	background-color: grey;
-	color: grey;
+#headers {
+	height: 30em;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	h3 {
+		clear: both;
+		position: relative;
+		width: 11em;
+		text-align: center;
+	}
 }
 .side-image {
   background: $side-image-content-background;
@@ -58,26 +73,6 @@ body {
     @include media($large-screen) {
       @include span-columns(8);
       padding: 4em 4em 8em 4em;
-    }
-
-    h1 {
-      margin-bottom: 0.9em;
-    }
-
-    h4 {
-      background: #BBB;
-      color: white;
-      display: inline-block;
-      font-size: 0.75em;
-      margin-bottom: 1.3em;
-      padding: 3px 8px;
-      text-transform: uppercase;
-    }
-
-    p {
-      color: $base-font-color;
-      line-height: $base-line-height;
-      margin-bottom: 3em;
     }
   }
 
