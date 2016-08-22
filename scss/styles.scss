@@ -21,6 +21,10 @@ body {
 	}
 }
 
+#grey-div {
+	background-color: grey;
+	color: grey;
+}
 .side-image {
   background: $side-image-content-background;
 
@@ -36,7 +40,7 @@ body {
     background-size: cover;
     border-bottom: $side-image-border;
     display: block;
-    min-height: 20em;
+    min-height: 50em;
     padding: 3em;
 
     @include media($large-screen) {

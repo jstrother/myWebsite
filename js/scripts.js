@@ -1,6 +1,7 @@
-$(function() {
+$(document).ready(function() {
 	console.log('ready');
 
+	$('#about').hide();
 	$('#portfolio').hide();
 
 	// velocityJS code for some animations
@@ -44,5 +45,5 @@ $(function() {
 	      }
 	    });
 	  });
-	}); 
+	});
 });
