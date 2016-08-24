@@ -7,7 +7,9 @@
     "css": "sass --watch ./scss/styles.scss:./public/styles.css",
     "html": "cp index.html public/ && cp img/*.* public/img/",
     "build": "webpack",
-    "ac": "git add --all && git commit -m"
+    "ac": "git add --all && git commit -m",
+    "push": "git push origin master",
+    "pull": "git pull origin master"
   },
   "repository": {
     "type": "git",
