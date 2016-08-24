@@ -5,10 +5,8 @@
 @import "myVariables";
 @import "myNavigation";
 @import "myFooter";
-
-* {
-	border: 1px solid red;
-}
+@import "modal";
+@import "table";
 
 body {
 	background: white;
@@ -50,10 +48,6 @@ body {
 #about {
   @include display(flex);
   
-  .center {
-    @include margin(auto);
-  }
-  
   #header-container {
     @include display(flex);
     @include flex-direction(row);
@@ -66,6 +60,24 @@ body {
   #p-container {
     @include align-self(flex-end);
   }
+}
+
+#portfolio {
+  @include outer-container;
+  
+  h3, p {
+    text-align: center;
+  }
+  
+  .portfolio-list {
+    background-color: lighten($dark-gray, 25%);
+    margin-bottom: 1em;
+    @include span-columns(6);
+    @include omega(2n);
+  }
+    p:first-child {
+      font-weight: bold;
+    }
 }
 
 .side-image {

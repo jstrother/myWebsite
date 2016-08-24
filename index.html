@@ -17,6 +17,7 @@
 	      <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
 	        <li class="nav-link" id="about-link"><a href="#about">Who I Am</a></li>
 	        <li class="nav-link" id="portfolio-link"><a href="#portfolio">Portfolio</a></li>
+	        <li class="nav-link" id="contact-link"><a href="#contact">Hire Me!</a></li>
 	      </ul>
 	    </nav>
 	  </div>
@@ -42,12 +43,204 @@
 						<p>Creating things is as natural as breathing. Ideas arrive constantly and give me so much to work out and put to good use. Ideas as simple as a task list, to something as grand as open-source inventory tracking software, I continually give myself something worthwhile to work toward.</p>
 						<p>Few things excite me more than "new". Whether it is a new place- such as my first-ever trip to southern California recently, or discovering a new database (RethinkDB) that fits closely with my belief that the web should be as real-time as possible, I never stop exploring places or ideas.</p>
 					</div>
-					<!--skill table needed; place into a modal-->
+					<div class="modal">
+					  <label for="modal-1">
+					    <div class="modal-trigger">See Skillset</div>
+					  </label>
+					  <input class="modal-state all-modals" id="modal-1" type="checkbox" />
+					  <div class="modal-fade-screen">
+					    <div class="modal-inner">
+					      <div class="modal-close" for="modal-1"></div>
+					      <h1>Skills</h1>
+					      <p class="modal-intro">What I know - and how well</p>
+					      <p class="modal-content">
+					      	<table class="tables">
+							  <thead>
+							    <tr>
+							      <th>Skill</th>
+							      <th>Beginner</th>
+							      <th>Struggle A Little</th>
+							      <th>Average</th>
+							      <th>I Know My Stuff</th>
+							      <th>Expert</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <td>HTML</td>
+							      <td></td>
+							      <td></td>
+							      <td></td>
+							      <td>X</td>
+							      <td></td>
+							    </tr>
+							    <tr>
+							      <td>CSS/Sass</td>
+							      <td></td>
+							      <td></td>
+							      <td>X</td>
+							      <td></td>
+							      <td></td>
+							    </tr>
+							    <tr>
+							    	<td>Bourbon</td>
+							    	<td></td>
+							    	<td></td>
+							    	<td>X</td>
+							    	<td></td>
+							    	<td></td>
+							    </tr>
+							    <tr>
+							    	<td>Neat</td>
+							    	<td></td>
+							    	<td></td>
+							    	<td>X</td>
+							    	<td></td>
+							    	<td></td>
+							    </tr>
+							    <tr>
+							      <td>JavaScript</td>
+							      <td></td>
+							      <td></td>
+							      <td>X</td>
+							      <td></td>
+							      <td></td>
+							    </tr>
+							    <tr>
+							      <td>React</td>
+							      <td></td>
+							      <td></td>
+							      <td>X</td>
+							      <td></td>
+							      <td></td>
+							    </tr>
+							    <tr>
+							    	<td>Redux</td>
+							    	<td></td>
+							    	<td></td>
+							    	<td></td>
+							    	<td>X</td>
+							    	<td></td>
+							    </tr>
+							    <tr>
+							    	<td>NodeJS</td>
+							    	<td></td>
+							    	<td></td>
+							    	<td>X</td>
+							    	<td></td>
+							    	<td></td>
+							    </tr>
+							    <tr>
+							    	<td>Express</td>
+							    	<td></td>
+							    	<td></td>
+							    	<td>X</td>
+							    	<td></td>
+							    	<td></td>
+							    </tr>
+							    <tr>
+							    	<td>Socket.io</td>
+							    	<td></td>
+							    	<td></td>
+							    	<td>X</td>
+							    	<td></td>
+							    	<td></td>
+							    </tr>
+							    <tr>
+							    	<td>RethinkDB</td>
+							    	<td></td>
+							    	<td></td>
+							    	<td>X</td>
+							    	<td></td>
+							    	<td></td>
+							    </tr>
+							  </tbody>
+							</table>
+
+					      </p>
+					    </div>
+					  </div>
+					</div>
 				</div>
 				<div id="portfolio" class="info-container">
-					<p>Portfolio</p>
-					<p>-links to GitHub</p>
-					<p>-open modal to see it in action</p>
+					<h3>Portfolio</h3>
+					<p>Here is where you'll find some of my recent work. Give each one a click to find out a little more.</p>
+					<div class="portfolio-list">
+						<p>Flappy Bird</p>
+						<p>This project was a game clone that taught me a lot of the JS basics.</p>
+						<div class="modal">
+						  <label for="modal-2">
+						    <div class="modal-trigger">See More</div>
+						  </label>
+						  <input class="modal-state all-modals" id="modal-2" type="checkbox" />
+						  <div class="modal-fade-screen">
+						    <div class="modal-inner">
+						      <div class="modal-close" for="modal-2"></div>
+						      <h1>Flappy Bird</h1>
+						      <p class="modal-intro">My first JavaScript project</p>
+						      <p class="modal-content">With this project, I created a simple game clone that taught a lot of JavaScript basics, and, while doing some research, introduced me to NodeJS. I got curious enough that I learned more, and then decided to expand my skillset by becoming a Full-Stack JS Developer. At this moment, I don't have a working example ready to go, but you can check out the GitHub repo: <a href="https://github.com/jstrother/flappy-bird" target="_new">Flappy Bird code</a>.</p>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="portfolio-list">
+						<p>API Hack</p>
+						<p>This project taught me how to do a quick and easy interface with an API.</p>
+						<div class="modal">
+						  <label for="modal-3">
+						    <div class="modal-trigger">See More</div>
+						  </label>
+						  <input class="modal-state all-modals" id="modal-3" type="checkbox" />
+						  <div class="modal-fade-screen">
+						    <div class="modal-inner">
+						      <div class="modal-close" for="modal-3"></div>
+						      <h1>API Hack</h1>
+						      <p class="modal-intro">My first foray into data retrieval</p>
+						      <p class="modal-content">Titled 'Read/Watch/Listen', this API 'hack' project taught me how to interface with the basic crud functions to retrieve data. This particular example took a book, movie, tv show, song, or artist as input and returned suggestions of something similar to check out next. At this moment, I don't have a working example ready to go, but you can check out the GitHub repo: <a href="https://github.com/jstrother/read-watch-listen" target="_new">API Hack code</a>.</p>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="portfolio-list">
+						<p>Hot-or-Cold</p>
+						<p>This project introduced me to React and Redux.</p>
+						<div class="modal">
+						  <label for="modal-4">
+						    <div class="modal-trigger">See More</div>
+						  </label>
+						  <input class="modal-state all-modals" id="modal-4" type="checkbox" />
+						  <div class="modal-fade-screen">
+						    <div class="modal-inner">
+						      <div class="modal-close" for="modal-4"></div>
+						      <h1>Hot-or-Cold</h1>
+						      <p class="modal-intro">My introduction to React/Redux</p>
+						      <p class="modal-content">This time I took an older project that guessed a number between 1 and 100, and refactored it so that the front-end used React and the data flowed through according to Redux. At this moment, I don't have a working example ready to go, but you can check out the GitHub repo: <a href="https://github.com/jstrother/hot-cold-redux" target="_new">Hot-or-Cold code</a>.</p>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="portfolio-list">
+						<p>Task List</p>
+						<p>A full-stack app using React/Redux, Socket.io, and RethinkDB</p>
+						<div class="modal">
+						  <label for="modal-5">
+						    <div class="modal-trigger">See More</div>
+						  </label>
+						  <input class="modal-state all-modals" id="modal-5" type="checkbox" />
+						  <div class="modal-fade-screen">
+						    <div class="modal-inner">
+						      <div class="modal-close" for="modal-5"></div>
+						      <h1>Task List</h1>
+						      <p class="modal-intro">Testing a complete real-time tech stack</p>
+						      <p class="modal-content">I used this project to test out a tech stack that allows for data from a database be updated and displayed in real-time to all connected users. You can give the Task List a shot here: <a href="http://52.43.128.234:9000/" target="_new">Play with Task List</a>. Add new tasks with the plus sign in the lower right, check tasks complete with the checkbox, and delete them by clicking on the trash icon. For more fun, open this in two browser tabs at the same time! Check out the GitHub repo: <a href="https://github.com/jstrother/task-list" target="_new">Task List code</a>.</p>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div id="contact">
+					<!-- add a form for prospective clients and employers to reach me -->
+					<!-- inputs: First & Last Name(two fields, both required), Email(required), Organization(optional), Brief Description of Project(required) -->
 				</div>
 		  </div>
 		</div>
@@ -57,9 +250,9 @@
 	    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_square.png" alt="Logo image">
 	  </div>
 	    <ul>
-	      <li><a href="javascript:void(0)">About Me</a></li>
-	      <li><a href="javascript:void(0)">Portfolio</a></li>
-	      <li><a href="javascript:void(0)">Contact</a></li>
+	      <li class="nav-link" id="about-link2"><a href="#about">Who I Am</a></li>
+	      <li class="nav-link" id="portfolio-link2"><a href="#portfolio">Portfolio</a></li>
+	      <li class="nav-link" id="contact-link2"><a href="#contact">Hire Me!</a></li>
 	    </ul>
 
 	    <div class="footer-secondary-links">
@@ -82,8 +275,8 @@
 	    </div>
 	</footer>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>
-  <script src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.ui.min.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.min.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.2.2/velocity.ui.min.js"></script>
 	<script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>

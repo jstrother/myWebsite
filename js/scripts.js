@@ -9,12 +9,12 @@ $(document).ready(function() {
 	$('#about-link').on('click', function() {
 		$('#headers').hide();
 		$('#portfolio').hide();
-		$('#about').velocity('fadeIn', {duration: 1500})
+		$('#about').velocity('fadeIn', {duration: 1500});
 	});
 	$('#portfolio-link').on('click', function() {
 		$('#headers').hide();
 		$('#about').hide();
-		$('#portfolio').velocity('fadeIn', {duration: 1500})
+		$('#portfolio').velocity('fadeIn', {duration: 1500});
 	});
 
 	// code to handle resizing and appearance-ish of nav bar
@@ -49,4 +49,24 @@ $(document).ready(function() {
 	    });
 	  });
 	});
+
+	// code for modal
+	$(function() {
+	  $(".all-modals").on("change", function() {
+	    if ($(this).is(":checked")) {
+	      $("body").addClass("modal-open");
+	    } else {
+	      $("body").removeClass("modal-open");
+	    }
+	  });
+	
+	  $(".modal-fade-screen, .modal-close").on("click", function() {
+	    $(".modal-state:checked").prop("checked", false).change();
+	  });
+	
+	  $(".modal-inner").on("click", function(e) {
+	    e.stopPropagation();
+	  });
+	});
+
 });
