@@ -134,6 +134,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
   line-height: 1.2;
   margin: 0 0 0.75em; }
 
@@ -665,7 +666,7 @@ h6 {
         .centered-navigation li.more > a {
           margin-right: 1em; } }
       .centered-navigation li.more > a::after {
-        content: "ΓÇ║";
+        content: "›";
         font-size: 1.2em;
         position: absolute;
         right: 0.5em; }
@@ -779,6 +780,9 @@ h6 {
       .footer-2 .footer-secondary-links ul.footer-social img:focus, .footer-2 .footer-secondary-links ul.footer-social img:hover {
         opacity: 1; }
 
+* {
+  border: 1px solid red; }
+
 body {
   background: white;
   color: black;
@@ -793,21 +797,28 @@ body {
     #name-div {
       display: none; } }
 
-#headers {
+.info-container {
   height: 30em;
   width: 100%;
-  display: flex;
-  align-items: center;
+  display: flex; }
+
+#headers {
+  flex-direction: column;
   justify-content: center;
-  flex-direction: column; }
+  align-items: center; }
   #headers h3 {
     clear: both;
     position: relative;
     width: 11em;
     text-align: center; }
 
+#about {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start; }
+
 .side-image {
-  background: #d3d3d3; }
+  background: #737373; }
   @media screen and (min-width: 53.75em) {
     .side-image {
       display: table;
