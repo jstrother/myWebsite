@@ -808,9 +808,11 @@ body {
   align-items: center; }
   #headers h3 {
     clear: both;
-    position: relative;
+    margin: auto;
     width: 11em;
     text-align: center; }
+  #headers p {
+    margin: auto; }
 
 #about {
   flex-direction: row;

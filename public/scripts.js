@@ -49,21 +49,21 @@
 	$(document).ready(function () {
 		console.log('ready');
 	
-		$('#headers').hide();
-		$('#about').show();
+		$('#headers').show();
+		$('#about').hide();
 		$('#portfolio').hide();
 	
 		// velocityJS code for some animations
-		// $('#about-link').on('click', function() {
-		// 	$('#headers').hide();
-		// 	$('#portfolio').hide();
-		// 	$('#about').velocity('fadeIn', {duration: 1500})
-		// });
-		// $('#portfolio-link').on('click', function() {
-		// 	$('#headers').hide();
-		// 	$('#about').hide();
-		// 	$('#portfolio').velocity('fadeIn', {duration: 1500})
-		// });
+		$('#about-link').on('click', function () {
+			$('#headers').hide();
+			$('#portfolio').hide();
+			$('#about').velocity('fadeIn', { duration: 1500 });
+		});
+		$('#portfolio-link').on('click', function () {
+			$('#headers').hide();
+			$('#about').hide();
+			$('#portfolio').velocity('fadeIn', { duration: 1500 });
+		});
 	
 		// code to handle resizing and appearance-ish of nav bar
 		$(window).on("load resize", function (e) {
