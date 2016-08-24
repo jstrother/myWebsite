@@ -29,13 +29,13 @@ body {
 .info-container {
 	height: 30em;
 	width: 100%;
-  display: flex;
 }
 
 #headers {
-	flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include display(flex);
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
 	h3 {
 		clear: both;
 		margin: auto;
@@ -48,9 +48,24 @@ body {
 }
 
 #about {
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
+  @include display(flex);
+  
+  .center {
+    @include margin(auto);
+  }
+  
+  #header-container {
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(space-around);
+    .about-h3 {
+      text-align: center;
+    }
+  }
+  
+  #p-container {
+    @include align-self(flex-end);
+  }
 }
 
 .side-image {
