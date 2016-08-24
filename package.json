@@ -8,8 +8,8 @@
     "html": "cp index.html public/ && cp img/*.* public/img/",
     "build": "webpack",
     "ac": "git add --all && git commit -m",
-    "push": "git push origin master",
-    "pull": "git pull origin master"
+    "push": "git push origin master && git status",
+    "pull": "git pull origin master && git status"
   },
   "repository": {
     "type": "git",
