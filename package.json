@@ -5,7 +5,7 @@
   "main": "js/scripts.js",
   "scripts": {
     "css": "sass --watch ./scss/styles.scss:./public/styles.css",
-    "html": "cp index.html public/ && cp img/*.* public/img/ && cp server.js public/",
+    "html": "cp index.html public/ && cp img/*.* public/img/",
     "build": "webpack",
     "ac": "git add --all && git commit -m",
     "push": "git push origin master && git status",
