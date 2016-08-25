@@ -78,23 +78,4 @@ $(document).ready(function() {
 	  });
 	});
 	
-	// code for email contact form
-	$('#contact-submit').click(function() {
-		let name = $('#name').val();
-		let email = $('#email').val();
-		let subject = $('#subject').val();
-		let message =$('#message').val();
-		$('#text').text('Sending email... Please wait');
-		$.get('http://www.jimstrother.com:3000/send', {
-			to: 'strotherwebdev@gmail.com',
-			from: email,
-			name: name,
-			subject: subject,
-			message: message
-		}, function(data) {
-			if (data == 'sent') {
-				$('#text').empty().html('Email has been sent!');
-			}
-		});
-	});
 });

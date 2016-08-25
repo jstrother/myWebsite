@@ -125,26 +125,6 @@
 				e.stopPropagation();
 			});
 		});
-	
-		// code for email contact form
-		$('#contact-submit').click(function () {
-			var name = $('#name').val();
-			var email = $('#email').val();
-			var subject = $('#subject').val();
-			var message = $('#message').val();
-			$('#text').text('Sending email... Please wait');
-			$.get('http://www.jimstrother.com:3000/send', {
-				to: 'strotherwebdev@gmail.com',
-				from: email,
-				name: name,
-				subject: subject,
-				message: message
-			}, function (data) {
-				if (data == 'sent') {
-					$('#text').empty().html('Email has been sent!');
-				}
-			});
-		});
 	});
 
 /***/ }
