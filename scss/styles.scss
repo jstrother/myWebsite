@@ -8,6 +8,10 @@
 @import "modal";
 @import "table";
 
+html {
+  box-sizing: border-box;
+}
+
 body {
 	background: white;
 	color: black;
@@ -25,7 +29,7 @@ body {
 }
 
 .info-container {
-	height: 30em;
+	height: 35em;
 	width: 100%;
 }
 
@@ -78,6 +82,10 @@ body {
     p:first-child {
       font-weight: bold;
     }
+}
+
+.contact-button {
+  color: $white;
 }
 
 .side-image {

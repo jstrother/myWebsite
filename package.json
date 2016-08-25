@@ -5,7 +5,7 @@
   "main": "js/scripts.js",
   "scripts": {
     "css": "sass --watch ./scss/styles.scss:./public/styles.css",
-    "html": "cp index.html public/ && cp img/*.* public/img/",
+    "html": "cp index.html public/ && cp img/*.* public/img/ && cp server.js public/",
     "build": "webpack",
     "ac": "git add --all && git commit -m",
     "push": "git push origin master && git status",
@@ -24,6 +24,7 @@
   "dependencies": {
     "express": "^4.14.0",
     "jquery": "^3.1.0",
+    "nodemailer": "^2.5.0",
     "react": "^15.3.1",
     "react-dom": "^15.3.1",
     "react-redux": "^4.4.5",

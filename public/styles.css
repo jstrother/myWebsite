@@ -942,6 +942,9 @@ h6 {
             margin-bottom: 0;
             width: auto; } }
 
+html {
+  box-sizing: border-box; }
+
 body {
   background: white;
   color: black;
@@ -957,7 +960,7 @@ body {
       display: none; } }
 
 .info-container {
-  height: 30em;
+  height: 35em;
   width: 100%; }
 
 #headers {
@@ -1072,6 +1075,9 @@ body {
       clear: left; }
   #portfolio p:first-child {
     font-weight: bold; }
+
+.contact-button {
+  color: #ffffff; }
 
 .side-image {
   background: #d9d9d9; }
