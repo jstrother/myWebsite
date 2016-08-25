@@ -70,7 +70,7 @@ body {
   }
   
   .portfolio-list {
-    background-color: lighten($dark-gray, 25%);
+    background-color: darken($white, 20%);
     margin-bottom: 1em;
     @include span-columns(6);
     @include omega(2n);

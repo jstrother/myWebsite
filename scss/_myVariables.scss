@@ -22,11 +22,12 @@ $horizontal-bar-mode: $large-screen;
 $base-line-height: 1.5em !default;
 $action-color: #477DCA !default;
 $dark-gray: #333 !default;
+$white: #ffffff;
 $large-screen: 53.75em !default;
 $base-font-color: $dark-gray !default;
 $side-image-background-top: #B5EBEB;
 $side-image-background-bottom: #5DAC5D;
-$side-image-content-background: lighten($dark-gray, 40%);
+$side-image-content-background: darken($white, 15%);
 $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, 0.8), 30%);
 
 // variables for dealing with footer
