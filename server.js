@@ -15,10 +15,10 @@ app.get('/', function(req, res) {
 
 app.get('/send', function(req, res) {
     const mailOptions = {
-        to: req.body.to,
-		from: req.body.name + ' &lt;' + req.body.email + '&gt;',
-		subject: req.body.subject,
-		message: req.body.message
+        to: req.query.to,
+		from: req.query.name + ' &lt;' + req.query.email + '&gt;',
+		subject: req.query.subject,
+		message: req.query.message
     };
     smtpTransport.sendMail(mailOptions, function(error, response) {
         if (error) {
