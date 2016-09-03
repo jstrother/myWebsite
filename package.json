@@ -4,9 +4,10 @@
   "description": "My website, the one I use",
   "main": "js/scripts.js",
   "scripts": {
-    "css": "sass --watch ./scss/styles.scss:./public/styles.css",
+    "css": "sass ./scss/styles.scss:./public/styles.css && cleancss public/styles.css --output public/styles.css",
     "html": "cp index.html public/ && cp img/*.* public/img/",
-    "build": "webpack",
+    "js": "webpack && uglifyjs public/scripts.js --compress --mangle --output public/scripts.js",
+    "build": "npm run css && npm run html && npm run js",
     "ac": "git add --all && git commit -m",
     "push": "git push origin master && git status",
     "pull": "git pull origin master && git status"
@@ -53,6 +54,7 @@
     "react-addons-test-utils": "^15.3.0",
     "sass-loader": "^4.0.0",
     "style-loader": "^0.13.1",
+    "uglify-js": "^2.7.3",
     "webpack": "^1.13.2"
   }
 }
