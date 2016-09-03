@@ -1,9 +1,12 @@
 @import "myBreakpoints";
 @import "myHeaderFunction";
 
+// colors
+$dark-gray: #333333;
+$white: #ffffff;
+
 // variables dealing with nav bar
 $base-border-radius: 3px !default;
-$dark-gray: #333 !default;
 $large-screen: 53.75em !default;
 $base-font-color: $dark-gray !default;
 $centered-navigation-padding: 1em;
@@ -21,13 +24,11 @@ $horizontal-bar-mode: $large-screen;
 // variables dealing with side image
 $base-line-height: 1.5em !default;
 $action-color: #477DCA !default;
-$dark-gray: #333 !default;
-$white: #ffffff;
 $large-screen: 53.75em !default;
 $base-font-color: $dark-gray !default;
 $side-image-background-top: #B5EBEB;
 $side-image-background-bottom: #5DAC5D;
-$side-image-content-background: darken($white, 15%);
+$side-image-content-background: darken($white, 5%);
 $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, 0.8), 30%);
 
 // variables for dealing with footer
@@ -36,7 +37,7 @@ $action-color: #477DCA !default;
 $medium-screen: 40em !default;
 $large-screen: 53.75em !default;
 $footer-background: desaturate(darken($action-color, 20%), 30%);
-$footer-color: white;
+$footer-color: $white;
 $footer-link-color: transparentize($footer-color, 0.6);
 $footer-disclaimer-color: transparentize($footer-color, 0.6);
 
