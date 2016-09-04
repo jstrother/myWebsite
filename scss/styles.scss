@@ -38,7 +38,7 @@ body {
   @include flex-direction(column);
   @include justify-content(center);
   @include align-items(center);
-	h3 {
+	h4 {
 		clear: both;
 		margin: auto;
 		width: 11em;
@@ -96,7 +96,7 @@ body {
   }
 
   .images-wrapper {
-    background: url("./img/close-up1.jpg"),
+    background: url("./img/close-up.jpg"),
                 linear-gradient($side-image-background-top, $side-image-background-bottom),
                 no-repeat $side-image-background-top;
     background-color: $side-image-background-top;
